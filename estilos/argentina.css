@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* se cambia el modelo de la pagina */
+    box-sizing: border-box;
+}
+html{
+    background-image: url(/imagenes/Mapamundi1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* se adapta a cualquier tamaño de pantalla */
+    font-size:  1.5em;
+    /* pcupa toda la pantalla */
+    min-height: 100%;
+}
+
+body > *{
+    box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    /* proporciona una cuadrícula de una sola columna */
+    display:grid;
+    gap:10px;/*Separación de los elementos */
+}
+
+body{
+    /* definir las areas para um mismo diseño */
+    grid-template-areas: 
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: darkorchid;
+}
+
+.article{
+    grid-area: article;
+    background-color: darkmagenta;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: gold;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: mediumturquoise;
+}
+
+@media (min-width: 600px){
+    body{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside article"
+        "footer footer"
+        ;
+    }
+}
+
+/* tamaño escritorio */
+@media (min-width:900px){
+    body{
+        grid-template: 
+        "header header header" 100px
+        "nav article aside" auto
+        "footer footer footer" 100px 200px auto 200px;
+    }
+}
