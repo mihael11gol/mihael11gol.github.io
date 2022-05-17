@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+}
+
+.menu {
+    width: 800px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.lista>li {
+    float: left;
+}
+
+.lista li a {
+    background-color: rgb(170, 94, 94);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 30px  30px;
+    display: block;
+}
+
+.lista li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.lista li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.lista li:hover>ul {
+    display: block;
+}
+
+.lista li ul li {
+    position: relative;
+}
+
+.contorno {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: -3px 3px rgb(12, 12, 12);
+}
+
+.central {
+    background-color: rgb(107, 166, 233);
+    color: blue;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.flora img{
+    width: 500px;
+    height: 200px;
+}
+
+.flora1 img{
+    width: 500px;
+    height: 200px;
+}
+
+.flora2 img{
+    width: 500px;
+    height: 200px;
+}
+
+.flora3 img{
+    width: 500px;
+    height: 200px;
+}
+
+html{
+    background-image: url(/imagenes/islas2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    height: 35px;
+    background-color: rgb(108, 180, 240);
+    margin: auto;
+}
+
+.logo img{
+    width: 20px;
+    height: 15px;
+    margin-top: 10px;
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*  se cambia modelo de letra */
+    box-sizing: border-box;
+}
+.menu {
+    width: 1100px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.lista>li {
+    float: left;
+}
+
+.lista li a {
+    background-color: rgb(48, 78, 158);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 40px 70px;
+    display: block;
+    font-size: 15px;
+}
+
+.lista li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.lista li ul {
+    display: none;
+    position: absolute;
+    min-width: 50px;
+}
+
+.lista li:hover>ul {
+    display: block;
+}
+
+.lista li ul li {
+    position: relative;
+}
+
+.fotos h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.turismo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.postal {
+    padding: 0 20px 20px;
+}
+
+img:hover {
+    filter: saturate(180%);
+}
+
+.central {
+    background-color: rgb(107, 166, 233);
+    color: rgb(107, 166, 233);
+    text-align: center;
+    overflow: hidden;
+    /*Quitar el espacio sup. */
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contorno {
+    text-align: center;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: -3px 3px rgb(12, 12, 12);
+    background-color: rgb(107, 166, 233);
+}
+
+.logo{
+    height: 35px;
+    background-color: rgb(108, 180, 240);
+    margin: auto;
+}
+
+.logo img{
+    width: 20px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+.postal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 20px;
+}
+
+.postal2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px 20px;
+}
